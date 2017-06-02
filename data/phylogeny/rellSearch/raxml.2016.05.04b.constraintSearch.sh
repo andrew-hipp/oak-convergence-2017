@@ -1,0 +1,2 @@
+raxmlHPC-PTHREADS-AVX -f D -T 7 -p 12345 -m GTRCAT -g ../../../data/trees/constraint.albae.roburoids.sister.v3.tre -s ../../../data/phy/allTaxa.c85d6m20p3.2016.12.08.phy -n allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+raxmlHPC-PTHREADS-AVX -f b -m GTRCAT -z RAxML_rellBootstrap.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre -t RAxML_bestTree.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre -n bipartitions.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre

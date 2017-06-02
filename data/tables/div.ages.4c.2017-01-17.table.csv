@@ -1,0 +1,8 @@
+,age,taxa,crown,source
+allOaks,50.2,435,TRUE,Paul Manos estimate; the American oak clade + 50 Cerris / Ilex and 90 Cyclobalanopsis
+OOA.crown,45,284,TRUE,WO + RO + 7 virentes + 5 protobalanus + 2 ponticae
+WO.all.crown,31.1,150,TRUE,Estimate -- total WO in tree + MX white oaks missing + 10 endemic to Central America -- excludes virentes 
+WO.mx.crown,17.3,80,TRUE,Valencia
+WO.roburoids.crown,14.9,25,TRUE,McVay paper
+RO.all.crown,31.1,120,TRUE,Estimate -- total RO in tree + MX red oaks missing
+RO.mx.crown,14.5,74,TRUE,Valencia

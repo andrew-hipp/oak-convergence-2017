@@ -1,0 +1,61 @@
+ID	FIELD	UNIT	DESCRIPTION	DATATYPE	DOMAIN	Continuous, ordered categorical, unordered categorical, binary	utilize	important	Notes
+0	ID		Database ID	Number		u	0
+1	MU_GLOBAL		Soil Mapping Unit (GIS ID)	Number		u	0
+2	MU_SOURCE1		source database mapping unit ID	String		u	0
+3	MU_SOURCE2		source database unit ID	Number		u	0
+4	COVERAGE		Coverage (source database)	Number	D_COVERAGE	u	0
+5	ISSOIL		Flag for non-soil units ("is soil?")	Number	D_ISSOIL	b	0
+6	SEQ		Soil unit sequence w/in mapping unit	Number		u	0
+7	SHARE	%	Share in Soil Mapping Unit	Number		u	0
+8	SU_SYMBOL		Dominant Soil Group Symbol	String		u	0
+9	SU_SYM74		Soil Unit Symbol (FAO 74)	String		u	0
+10	SU_SYM85		Soil Unit Symbol (FAO 85)	String		u	0
+11	SU_SYM90		Soil Unit Symbol (FAO 90)	String		u	0
+12	SU_CODE		Dominant Soil Group	Number	D_SYMBOL	u	0
+13	SU_CODE74		Soil Unit Name (FAO74)	Number	D_SYMBOL74	u	0
+14	SU_CODE85		Soil Unit Name (FAO 85)	Number	D_SYMBOL85	u	0
+15	SU_CODE90		Soil unit Name (FAO 90)	Number	D_SYMBOL90	u	0
+16	T_TEXTURE		Topsoil Texture	Number	D_TEXTURE	o	1	1	0-3 code, 0=none, 1=coarse, 2=medium, 3=fine. IGNORE zeros!
+17	REF_DEPTH	cm	Reference Soil Depth	Number		c	0
+18	DRAINAGE		Drainage class (0-0.5% slope)	Number	D_DRAINAGE	o	1	1	0-6 code, very poorly drained to excessively drained
+19	AWC_CLASS	mm/m	Available Water Storage capacity	Number	D_AWC	o	1		1-7 code, 1=150mm/m, 0=0mm/m
+20	PHASE1		PHASE1 (soil subunits types)	Number	D_PHASE	u	0
+21	PHASE2		PHASE2	Number	D_PHASE	u	0
+22	ROOTS	cm	Obstacles to Roots (ESDB)	Number	D_ROOTS	o	0		0-6, too little data; 1=no obstacle, 6=obstacle between 0-20cm depth. IGNORE zero!
+23	IL	cm	Impermeable Layer  (ESDB)	Number	D_IL	o	0		0-4, too little data; 1=impremeable within 150cm, 4=imperm within 40cm depth. IGNORE zero!
+24	SWR		Soil Water Regime  (ESDB)	Number	D_SWR	o	0	1	0-4, too little data; 1=not wet within 80cm for 3m, nor wet within 40cm for 1 month, 4=wet within 40cm for over 11 months. IGNORE zero!
+25	ADD_PROP		Additional Property (Petric,Gelic,Vertic)	Number	D_ADD_PROP	u	0
+26	T_GRAVEL	%	Topsoil Gravel Content	Number		c	1
+27	T_SAND	%	Topsoil Sand Fraction	Number		c	1
+28	T_SILT	%	Topsoil Silt Fraction	Number		c	1
+29	T_CLAY	%	Topsoil Clay Fraction	Number		c	1
+30	T_USDA_TEX_CLASS		Topsoil USDA Texture Classification	Number	D_USDA_TEX_CLASS	u	0
+31	T_REF_BULK_DENSITY	kg/dm3	Topsoil Reference Bulk Density	Number		c	0		Correlated with T_BULK_DEN soil compaction metric (area for particles and between particles)
+32	T_BULK_DEN	kg/dm3	Topsoil Bulk Density	Number		c	1	1	Soil density (dependent on mineral composition (high 2 g/cm3), OM (low <<1g/cm3) and compaction (area for particles and between particles)
+33	T_OC	% weight	Topsoil Organic  Carbon	Number		o	1	1	Organic Carbon (OC) and pH are best indicators of soil health status. 1-5 codes, 1= <0.2 %OC, 5= >2.0 % OC
+34	T_PH_H2O		Topsoil pH (H2O)	Number		c	1	1	Organic Carbon (OC) and pH are best indicators of soil health status
+35	T_CEC_CLAY	cmol/kg	Topsoil CEC (clay) Cation Exchange	Number		o	1		1-4, 1= <20cmol/kg clay, 4= >100 cmol/kg clay
+36	T_CEC_SOIL	cmol/kg	Topsoil CEC (soil) Cation Exchange	Number		o	1		1-5, 1= <4cmol/kg, 5= >40 cmol/kg
+37	T_BS	%	Topsoil Base Saturation (exchangeable cations (nutrients) Na, Ca, Mgand K as a % of overall exchange capacity)	Number		c	1	1	Binned in 4 sections? Correlates with pH. <20% = desaturated soils, similar to extremely acid pH, >80% indicates saturated conditions of often calcaerous or sodic
+38	T_TEB	cmol/kg	Topsoil TEB (total exchangeable bases)	Number		c	1		Total exchangeable bases stand for the sum of exchangeable cations in a soil: sodium (Na), calcium (Ca), magnesium (Mg) and Potassium (K).
+39	T_CACO3	% weight	Topsoil Calcium Carbonate	Number		c	1	1	Indicator of ability to buffer pH; none=<2%,very high = >40%
+40	T_CASO4	% weight	Topsoil Gypsum	Number		c	1		Gypsum is a chemical compound (a salt) that occurs in driest soils
+41	T_ESP	%	Topsoil Sodicity (ESP) exchangeable sodium	Number		c	1		Exchangeable sodium percentage in the soil
+42	T_ECE	dS/m	Topsoil Salinity (ECe) electrical conductivity	Number		c	1		Percentage in the top and subsoil
+43	S_GRAVEL	%	Subsoil Gravel Content	Number		c	1	1
+44	S_SAND	%	Subsoil Sand Fraction	Number		c	1
+45	S_SILT	%	Subsoil Silt Fraction	Number		c	1
+46	S_CLAY	%	Subsoil Clay Fraction	Number		c	1
+47	S_USDA_TEX_CLASS		Subsoil  USDA Texture Classification	Number	D_USDA_TEX_CLASS	u	0
+48	S_REF_BULK_DENSITY	kg/dm3	Subsoil Reference Bulk Density	Number		c	0		Correlated with T_BULK_DEN soil compaction metric (area for particles and between particles)
+49	S_BULK_DEN	kg/dm3	Subsoil Bulk Density	Number		c	1	1	Soil density (dependent on mineral composition (high 2 g/cm3), Organic Matter (OM) (low <<1g/cm3) and compaction (area for particles and between particles)
+50	S_OC	% weight	Subsoil Organic  Carbon	Number		o	1	1	Organic Carbon (OC) and pH are best indicators of soil health status. 1-5 codes, 1= <0.2 %OC, 5= >2.0 % OC
+51	S_PH_H2O		Subsoil pH (H2O)	Number		c	1	1	Organic Carbon (OC) and pH are best indicators of soil health status
+52	S_CEC_CLAY	cmol/kg	Subsoil CEC (clay)	Number		o	1		1-4, 1= <20cmol/kg clay, 4= >100 cmol/kg clay
+53	S_CEC_SOIL	cmol/kg	Subsoil CEC (soil)	Number		o	1		1-5, 1= <4cmol/kg, 5= >40 cmol/kg
+54	S_BS	%	Subsoil Base Saturation	Number		c	1		Binned in 4 sections? Correlates with pH. <20% = desaturated soils, similar to extremelyacid pH, >80% indicates saturated conditions of often calcaerous or sodic
+55	S_TEB	cmol/kg	Subsoil TEB	Number		c	1		Total exchangeable bases stand for the sum of exchangeable cations in a soil: sodium (Na), calcium (Ca), magnesium (Mg) and Potassium (K).
+56	S_CACO3	% weight	Subsoil Calcium Carbonate	Number		c	1	1	Indicator of ability to buffer pH; none=<2%,very high = >40%
+57	S_CASO4	% weight	Subsoil Gypsum	Number		c	1		Gypsum is a chemical compound (a salt) that occurs in driest soils
+58	S_ESP	%	Subsoil Sodicity (ESP)	Number		c	1
+59	S_ECE	dS/m	Subsoil Salinity (ECe)	Number		c	1		Salt content of a soil can be roughly estimated from the Electrical Conductivity

@@ -1,0 +1,44 @@
+
+
+WARNING: RAxML is not checking sequences for duplicate seqs and sites with missing data!
+
+
+
+This is RAxML version 8.2.4 released by Alexandros Stamatakis on October 02 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+RAxML Bipartition Computation: Drawing support values from trees in file RAxML_rellBootstrap.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre onto tree in file RAxML_bestTree.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -f b -m GTRCAT -z RAxML_rellBootstrap.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre -t RAxML_bestTree.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre -n bipartitions.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre 
+
+
+
+
+Found 1 tree in File RAxML_bestTree.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+
+
+
+Found 1000 trees in File RAxML_rellBootstrap.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+
+
+
+Found 1 tree in File RAxML_bestTree.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+
+
+
+Time for Computation of Bipartitions 0.361602
+Tree with bipartitions written to file:  /home/andrew/Dropbox/NSF-OAKS-1146488-core-files/Papers/2016-AmOaksFull/ANALYSES/analyses.final.2016-11-29/workspace/phylogeny/quickSearch/RAxML_bipartitions.bipartitions.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+Tree with bipartitions as branch labels written to file:  /home/andrew/Dropbox/NSF-OAKS-1146488-core-files/Papers/2016-AmOaksFull/ANALYSES/analyses.final.2016-11-29/workspace/phylogeny/quickSearch/RAxML_bipartitionsBranchLabels.bipartitions.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
+Execution information file written to :  /home/andrew/Dropbox/NSF-OAKS-1146488-core-files/Papers/2016-AmOaksFull/ANALYSES/analyses.final.2016-11-29/workspace/phylogeny/quickSearch/RAxML_info.bipartitions.allTaxa.c85d6m20p3.2016.12.08.rob_alb_constraint.tre
